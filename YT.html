@@ -6,35 +6,40 @@
     <title>YOUTALK</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .flex-container {
+        display: flex;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
-      <div class="div">
-          <nav class="nav">
-            <img src="svg/youtalk.svg" alt="Логотип" title="Наш Логотип">
-             <ul class="ul">
-               <li>
-                 <a href="">О нас</a>
-                 <a href="">Тарифы</a>
-                 <a href="">Для бизнеса</a>
-                 <a href="">Психологам</a>
-                 <a href="">Сертификат</a>
-                 <a href="">Материалы</a>
-                 <a href=""><img src="svg/материалы.svg" alt="Arrow" /></a>
-                 <a href="">FAQ</a>
-               </li>
-             </ul>
-          <button class="btn">Подобрать психолога</button>
+      <div class="flex-container">
+        <div>
+          <img src="svg/youtalk.svg" alt="Логотип" title="Наш Логотип" />
+        </div>
+        <div><a href="">О нас</a></div>
+        <div><a href="">Тарифы</a></div>
+        <div><a href="">Для бизнеса</a></div>
+        <div><a href="">Психологам</a></div>
+        <div><a href="">Сертификат</a></div>
+        <div><a href="">Материалы</a></div>
+        <div>
+          <a href=""><img src="svg/материалы.svg" alt="Arrow" /></a>
+        </div>
+        <div><a href="">FAQ</a></div>
+        <div><button class="btn">Подобрать психолога</button></div>
+        <div>
           <button class="hamburger" id="mobile-menu-btn">
             <div class="btn__hamb btn__hamb--triangle-inverce">
-                <div></div>
+              <div></div>
             </div>
-        </button>
-            </div>
-        </button>
-       </div>
+          </button>
+        </div>
+      </div>
     </header>
   </body>
 </html>

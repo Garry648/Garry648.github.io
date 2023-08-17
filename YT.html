@@ -4,22 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YOUTALK</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" 
+    rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <style>
       body {
         margin: 0;
+        padding: 0;
       }
-      .container {
+      container {
         display: flex;
         flex-wrap: wrap;
       }
-      .article-reference,
-      .conteiner-main {
+      article-reference,
+      conteiner-main {
         width: 100%;
         min-height: 1px;
       }
@@ -47,7 +45,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="body-prime">
     <header class="container-header">
       <div class="row-header">
         <div>
@@ -317,30 +315,34 @@
     </div>
     <footer class="container-footer">
       <div class="row-footer">
-        <div class="footer-block_one">
-          <div><a href=""></a>О нас</div>
-          <div><a href=""></a>Тарифы</div>
-          <div><a href=""></a>Для бизнеса</div>
-          <div><a href=""></a>Психологам</div>
-          <div><a href=""></a>FAQ</div>
-        </div>
-        <div class="footer-block_two">
-          <div></div>
-        </div>
-        <div class="footer-block_three">
-          <div><a href=""></a>Блог</div>
-          <div><a href=""></a>Вебинары</div>
-          <div><a href=""></a>Подкаст</div>
-          <div><a href=""></a>Сертификат</div>
-          <div><a href=""></a>Контакты</div>
-        </div>
+        <div class="footer-blocks-first">
+          <div class="footer-block_one">
+            <div><a href=""></a>О нас</div>
+            <div><a href=""></a>Тарифы</div>
+            <div><a href=""></a>Для бизнеса</div>
+            <div><a href=""></a>Психологам</div>
+            <div><a href=""></a>FAQ</div>
+          </div>
+          <div class="footer-block_two">
+            <div></div>
+          </div>
+          <div class="footer-block_three">
+            <div><a href=""></a>Блог</div>
+            <div><a href=""></a>Вебинары</div>
+            <div><a href=""></a>Подкаст</div>
+            <div><a href=""></a>Сертификат</div>
+            <div><a href=""></a>Контакты</div>
+          </div>
+        </div>  
         <div class="footer-feedback">
           <div id="info-mail">
             <p>Одно письмо в неделю со свежими новостями и акциями</p>
           </div>
           <div class="mail-window">
             <p class="mail-window-text">Ваш e-mail</p>
-            <img src="svg/Vector.svg" alt="vector" id="vect" />
+            <div class="vect-assembly">
+                <div class= "vectors-block"></div>
+                <img src="svg/Vector.svg" alt="vector" id="vect" />
           </div>
           <div class="law-info">
             <p>
@@ -348,11 +350,12 @@
               соответствии с ФЗ РФ № 152-ФЗ "О персональных данных", а также с
               Политикой конфиденциальности
             </p>
+          </div>        
           </div>
-          <div class="article-reference">
+        </div>
+        <div class="article-reference">
             <div class="up">
-              <img src="svg/Group.svg" alt="Group" id="SK" />
-              <h2>Участник</h2>
+              <img src="svg/involved.svg" alt="involved" id="involved" />
             </div>
             <div class="down">
               <img src="svg/VK.svg" alt="VK" />
@@ -360,9 +363,9 @@
               <img src="svg/twitter.svg" alt="twitter" />
               <img src="svg/Frame.svg" alt="Frame" />
             </div>
-          </div>
         </div>
       </div>
+      <img class="footer-rectangle"src="svg/footerRec.svg" alt="footerRec">
       <div class="layout-info">
         <p>@Youtalk, 2018-2022</p>
         <a href="">Юридические документы</a>

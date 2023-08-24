@@ -163,7 +163,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   width: auto 588px;
-  /* height: auto 500px; */
+  /* height: 500px; */
   border: 1px solid #c1c5cd;
   border-radius: 16px;
   margin: none;
@@ -180,26 +180,22 @@ header {
   top: 7px;
 }
 .article-label-text {
-  /* width: auto 221px;
-  height: auto 20px; */
   color: #333;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
-  /* margin: none;
-  padding: none; */
+  margin: 0;
 }
 .article-label-plus {
   position: absolute;
   left: 8px;
   top: 7px;
-  /* width: fixed 261px;
-  height: auto 32px; */
+  /* width: 261px;
+  height: 32px; */
   display: flex;
   align-items: center;
   padding: 6px 8px;
-  /* margin: none; */
   gap: 4px;
   border: 1px solid #c1c5cd;
   border-radius: 24px;
@@ -209,8 +205,8 @@ header {
   position: absolute;
   left: 8px;
   top: 47px;
-  /* width: auto 67px;
-  height: auto 32px; */
+  /* width: 67px;
+  height: 32px; */
   display: flex;
   align-items: center;
   padding: 6px 8px;
@@ -232,13 +228,15 @@ header {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
+  padding: 0;
+  margin: 0;
 }
 .article-second,
 .article-tird {
   position: relative;
   display: inline-flex;
   width: auto 1200px;
-  /* height: fixed 475px; */
+  /* height: 475px; */
   align-items: flex-start;
   gap: 24px;
   flex-shrink: 0;
@@ -255,7 +253,7 @@ header {
   position: relative;
   display: flex;
   width: fixed 384px;
-  /* height: fixed 476px; */
+  /* height: 476px; */
   flex-direction: column;
   border: 1px solid #c1c5cd;
   border-radius: 16px;

@@ -1,15 +1,16 @@
 .body-cont {
+  position: relative;
   width: 100%;
-  max-width: 1440px;
   font-family: "Montserrat", sans-serif;
   background: #ffffff;
   font-size: 14px;
   font-style: normal;
+  overflow-x: hidden;
 }
 .header-menu {
   width: 100%;
-  max-width: fixed 1440px;
-  height: fixed 76px;
+  max-width: 1440px;
+  height: 76px;
   flex-shrink: 0;
 }
 .header-menu-box {
@@ -17,49 +18,47 @@
   max-width: 1200px;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   margin-left: 120px;
-  margin-right: 120px;
   color: #333333;
 }
 .header-items_logo {
   width: 51px;
   height: 36px;
   flex-shrink: 0;
+  margin-right: 51px;
 }
 .header-items_menu {
   width: 100%;
   max-width: 582px;
   display: flex;
   align-items: center;
-  margin-left: 51px;
+  margin-right: 286px;
   padding: 0;
   gap: 30px;
   color: #333333;
   text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 114%;
   letter-spacing: 0.25px;
 }
 #about-us * {
   color: #333333;
+  text-decoration: none;
 }
 #arrow {
   align-items: center;
   margin-left: 8px;
 }
 #btn-menu * {
-  width: auto 230px;
-  height: auto 48px;
+  width: 230px;
+  height: 48px;
   display: inline-flex;
   padding: 14px 20px;
   align-items: center;
   gap: 10px;
   margin-left: 0;
-  margin-right: 241px;
 }
 .main-aside {
   position: relative;
@@ -68,8 +67,14 @@
   margin-left: 120px;
   margin-right: 120px;
   display: flex;
-  flex-direction: row-reverse;
   flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.main-text {
+  width: 57.5%;
+}
+.aside {
+  width: 23.5%;
 }
 .menu-second {
   display: inline-flex;
@@ -77,10 +82,7 @@
   gap: 8px;
   color: rgba(51, 51, 51, 0.7);
   text-align: center;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.25px;
   margin-left: 6px;
@@ -93,18 +95,13 @@
   color: #333;
   text-overflow: ellipsis;
   white-space: wrap;
-  font-family: Montserrat;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: 56px;
 }
 .title-sign {
   color: #494949;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
   margin-top: 16px;
   margin-bottom: 24px;
@@ -116,9 +113,7 @@
   flex-direction: row;
   align-items: flex-start;
   color: #333;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
@@ -130,9 +125,7 @@
   flex-direction: column;
   align-items: flex-start;
   color: #333;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 16px;
@@ -152,9 +145,7 @@
 .content-list_text {
   flex: 1 0 0;
   color: #333;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   text-decoration-line: underline;
@@ -205,9 +196,7 @@
 
 .content-title_header {
   color: #333;
-  font-family: Montserrat;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: 32px;
   margin-top: 24px;
@@ -222,10 +211,8 @@
 }
 .content-text {
   width: 690px;
-  color: var(--text-primary, #333);
-  font-family: Montserrat;
+  color: #333;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
@@ -236,22 +223,18 @@
   flex-direction: column;
   align-items: flex-start;
   border-radius: 16px;
-  background: var(--blue-b-80, #f3f7fe);
+  background: #f3f7fe;
 }
 .content-italic_text {
   width: 642px;
-  color: var(--text-primary, #333);
-  font-family: Montserrat;
+  color: #333;
   font-size: 16px;
   font-style: italic;
-  font-weight: 400;
   line-height: 24px;
 }
 .content-sign {
   color: #333;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   margin-top: 8px;
@@ -274,9 +257,7 @@
   gap: 8px;
   align-self: stretch;
   color: #333;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
@@ -297,9 +278,7 @@
 .content-text {
   align-self: stretch;
   color: #333;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
@@ -313,10 +292,8 @@
   width: 485px;
   color: #333;
   text-align: center;
-  font-family: Montserrat;
   font-size: 16px;
   font-style: italic;
-  font-weight: 400;
   line-height: 24px;
   margin-left: 102px;
   margin-top: 24px;
@@ -353,9 +330,7 @@
 }
 .content-info_title {
   color: #333;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
 }
@@ -384,9 +359,7 @@
 }
 .content-double-img_text {
   color: #333;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
@@ -398,10 +371,7 @@
   align-items: flex-start;
   gap: 8px;
   color: #2963a3;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
   display: flex;
 }
@@ -426,19 +396,14 @@
 }
 .big-question_title {
   color: #333;
-  font-family: Montserrat;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: 56px;
 }
 .big-question_help {
   color: #333;
-  font-family: Montserrat;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px;
 }
 .btn-menu * {
   display: flex;
@@ -457,9 +422,7 @@
   flex: 1 0 0;
   color: #333;
   text-align: center;
-  font-family: Montserrat;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
 }
@@ -467,12 +430,12 @@
   align-self: stretch;
   color: #333;
   text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
   margin-top: 8px;
+}
+#group-btn {
+  margin-left: 24px;
 }
 .aside-btn {
   width: 234px;
@@ -487,14 +450,14 @@
   background: #35b3a9;
   color: #fff;
   text-align: center;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  margin: 24px;
+  margin-right: 24px;
+  margin-top: 10px;
 }
 .aside-liliya {
+  position: relative;
   width: 282px;
   box-sizing: border-box;
   display: flex;
@@ -516,6 +479,9 @@
   margin: 0;
 }
 .aside-liliya_pic {
+  position: absolute;
+  top: 2px;
+  left: 12px;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -554,9 +520,7 @@
   justify-content: center;
   color: #333;
   text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 130%;
   letter-spacing: 0.25px;
@@ -564,9 +528,7 @@
 .aside-liliya-info_name {
   color: #333;
   text-align: center;
-  font-family: Montserrat;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 28px;
   margin-top: 16px;
@@ -579,9 +541,7 @@
   justify-content: center;
   color: #333;
   text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 130%;
   letter-spacing: 0.25px;
@@ -589,9 +549,7 @@
 .aside-corresp-text {
   color: #333;
   text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 130%;
   letter-spacing: 0.25px;
@@ -600,9 +558,7 @@
   align-self: stretch;
   color: #333;
   text-align: center;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: 24px;
 }
@@ -611,12 +567,8 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  align-self: stretch;
   color: #a2a7b1;
-  color: #a2a7b1;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 20px;
 }
@@ -652,29 +604,17 @@
 }
 .aside-liliya-info_title {
   color: #333;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
 }
 .aside-liliya-info_list {
   flex: 1 0 0;
   color: #333;
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-}
-.aside-btn {
-  display: flex;
-  padding: 12px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  align-self: stretch;
-  margin: 0 auto;
 }
 .aside-frame {
   width: 282px;
@@ -703,9 +643,7 @@
   width: 234px;
   color: #fff;
   text-align: center;
-  font-family: Montserrat;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
   line-height: 40px;
   margin: 48px auto;
@@ -720,47 +658,37 @@
   border-radius: 0px 0px 16px 16px;
 }
 .aside-store {
+  position: relative;
   width: 282px;
   height: 304px;
   flex-shrink: 0;
-  margin-top: 39px;
-}
-.aside-store_rectang {
-  width: 282px;
-  height: 304px;
-  flex-shrink: 0;
+  margin-top: 42px;
   border-radius: 24px;
   border: 1px solid #dedede;
   background: #fff;
   box-shadow: 0px 30px 50px 0px #eff5fb;
-}
-.aside-store_gifts {
-  width: 282px;
-  height: 304px;
-  flex-shrink: 0;
-  margin: 32px;
-}
-.store-mask {
-  position: fixed;
-  z-index: 2;
-  width: 282px;
-  height: 304px;
-  flex-shrink: 0;
-  border-radius: 24px;
-  background: #fff;
+  overflow: hidden;
 }
 .gift-box-one {
-  position: relative;
+  position: absolute;
+  top: 210px;
+  left: 145px;
   width: 112px;
   height: 106px;
   flex-shrink: 0;
 }
 .gift-box-two {
+  position: absolute;
+  top: 190px;
+  left: 160px;
   width: 137px;
   height: 121px;
   flex-shrink: 0;
 }
 .aside-store-content {
+  position: absolute;
+  right: 32px;
+  top: 25px;
   display: flex;
   width: 218px;
   flex-direction: column;
@@ -775,17 +703,13 @@
 .content-one_number {
   width: 17px;
   color: #2963a3;
-  font-family: Montserrat;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: 32px;
 }
 .content-one_text {
   color: #2963a3;
-  font-family: Montserrat;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 26px;
 }
@@ -795,21 +719,18 @@
   color: #011632;
   font-family: Open Sans;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
 }
 .aside-store-number {
   color: #333;
-  font-family: Montserrat;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: 32px;
 }
 .store-btn {
   display: flex;
   width: 108px;
+  height: 48px;
   padding: 12px 16px;
   justify-content: center;
   align-items: center;
@@ -818,9 +739,7 @@
   background: #35b3a9;
   color: #fff;
   text-align: center;
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
 }
@@ -834,8 +753,8 @@
   box-shadow: 0 3px 0 #03b2a5;
 }
 .btn {
-  width: auto 230px;
-  height: auto 48px;
+  width: 230px;
+  height: 48px;
   left: 20px;
   top: 14px;
   cursor: pointer;
@@ -848,7 +767,6 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  font-family: "Montserrat 600" sans-serif;
   letter-spacing: 1px;
   outline: none;
   transition: 0.2s;
@@ -863,25 +781,34 @@
   transform: translateY(-2px);
   box-shadow: 0 3px 0 #03b2a5;
 }
-.puddle-one {
-  width: 686px;
-  height: 606px;
-  flex-shrink: 0;
-  fill: #f7a698;
-  position: relative;
-  overflow: hidden;
-  padding-left: 411px;
-}
 .couple {
-  width: 396.211px;
-  height: 436.144px;
+  position: absolute;
+  top: 4800px;
+  left: 728px;
+  bottom: 409px;
+  width: 396px;
+  height: 369px;
   flex-shrink: 0;
 }
 .puddle-two {
+  position: absolute;
+  left: 1240px;
+  top: 4800px;
+  right: 0;
   width: 272px;
   height: 240px;
   flex-shrink: 0;
 }
+.puddle-one {
+  position: absolute;
+  top: 2480px;
+  left: 1222px;
+  right: 0;
+  height: 606px;
+  flex-shrink: 0;
+  fill: #f7a698;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -953,7 +880,7 @@ footer {
   font-weight: 700;
   line-height: 26px;
   padding: none;
-  margin: none;
+  margin: 0;
 }
 .mail-window {
   display: flex;
@@ -974,10 +901,7 @@ footer {
   display: inline-flex;
   width: 316px;
   color: #9d9d9d;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
   margin: 14px 52px 14px 16px;
 }
@@ -1000,10 +924,7 @@ footer {
   width: 486px;
   height: 54px;
   color: #fff;
-  font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.25px;
   margin-bottom: 10px;
@@ -1020,9 +941,9 @@ footer {
   align-items: start;
   width: 221px;
   height: 122px;
-  margin-top: none;
+  margin-top: 0;
   margin-bottom: 62px;
-  margin-left: none;
+  margin-left: 0;
 }
 #involved * {
   margin-bottom: 40px;
@@ -1046,7 +967,7 @@ footer {
 .footer-rectangle {
   width: 100%;
   max-width: 1200px;
-  height: fixed 1px;
+  height: 1px;
   flex-shrink: 0;
   margin-left: 120px;
   margin-right: 120px;
@@ -1059,11 +980,10 @@ footer {
   gap: 48px;
   color: #fff;
   font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
   opacity: 0.7;
   margin-left: 120px;
-  margin-top: 0;
+  margin-top: 16px;
 }
 #link-layout {
   color: #fff;

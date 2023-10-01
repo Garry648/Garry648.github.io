@@ -4,61 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YOUTALK</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" 
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/article.css" />
-    <style>
-      body  {
-        margin: 0;
-        padding: 0;
-      }
-      /* }
-      .aside,
-      .main-text {
-       width: 100%;
-       min-height: 1px;
-      }
-      @media (min-width: 992px) {
-       .aside {
-         flex: 0 0 33.333333%;
-         max-width: 33.333333%;
-         order: 1;
-       }
-       .main-text {
-         flex: 0 0 66.666667%;
-         max-width: 66.666667%;
-         order: 2;
-       }
-      }
-      /* @media (min-width: 1400px) { */
-       /* .aside { */
-         /* flex: 0 0 25%; */
-         /* max-width: 25%; */
-       /* } */
-       /* .main-text { */
-         /* flex: 0 0 75%; */
-         /* max-width: 75%; */
-       /* } */
-    </style>
-    <style> 
-      li {
-        list-style-type: none;
-      }
-      li::before {
-        color: rgba(3, 178, 165, 1);
-        content: "●";
-        padding-right: 8px;
-        font-size: 18px;
-      } */
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/details.css" />
   </head>
   <body class="body-cont">
-    <div class="puddle-one"><img src="svg/puddle.svg" alt="puddle"/></div>
+    <div class="puddle-one"><img src="svg/puddle.svg" alt="puddle" /></div>
     <header class="header-menu">
       <div class="header-menu-box">
         <div class="header-items_logo">
-        <img id="logo" src="svg/youtalk.svg" alt="Logo" title="Our Logo" />
+          <img id="logo" src="svg/youtalk.svg" alt="Logo" title="Our Logo" />
         </div>
         <div class="header-items_menu" id="about-us">
           <div><a href="">О нас</a></div>
@@ -75,6 +36,21 @@
           <button class="btn">Подобрать психолога</button>
         </div>
       </div>
+      <div class="burger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+        <ul class="menubox">
+          <li><a class="menu-item" href="#">О нас</a></li>
+          <li><a class="menu-item" href="#">Тарифы</a></li>
+          <li><a class="menu-item" href="#">Для бизнеса</a></li>
+          <li><a class="menu-item" href="#">Психологам</a></li>
+          <li><a class="menu-item" href="#">Сертификат</a></li>
+          <li><a class="menu-item" href="#">FAQ</a></li>
+          <li><a class="menu-item" href="#">Подобрать психолога</a></li>
+        </ul>
+      </div>
     </header>
     <main class="main-aside">
       <div class="main-text">
@@ -84,14 +60,20 @@
             <div><img src="svg/Arrow.svg" alt="Arrow" /></div>
             <div>Блог</div>
             <div><img src="svg/Arrow.svg" alt="Arrow" /></div>
-            <div>Как не утонуть в тревоге и управлять своими страхами</div>
+            <div class="menu-second_text">
+              Как не утонуть в тревоге и управлять своими страхами
+            </div>
           </div>
           <div class="row-text">
             <div class="title-text">
               <p>Как не утонуть в тревоге и управлять своими страхами</p>
             </div>
             <div class="title-sign">
-              <p>Автор: Лиза Файнтух 21.08.2021</p>
+              <p>Автор: Лиза Файнтух</p>
+              <img src="svg/dot.svg" alt="dot" id="dot" />
+              <p>21.08.2021</p>
+              <img src="svg/dot.svg" alt="dot" id="dot" />
+              <a class="self" id="self" href="">Self</a>
             </div>
             <div class="content">
               <img src="img/backswim.png" alt="backswim" class="base-img" />
@@ -99,9 +81,10 @@
               <div class="content-info" id="preview">
                 <div class="content-list_one">
                   <img src="svg/dott.svg" alt="dott" id="dott" />
-                  <a class="content-list_text" href=""></a>
+                  <a class="content-list_text" href="">
                     Как понять, что отношения с мамой были дисфункциональными и
-                    привели к травме?</a>
+                    привели к травме?</a
+                  >
                 </div>
                 <div class="content-list_two">
                   <div class="content-list_twenty-two">
@@ -128,7 +111,7 @@
               <div class="content-title">
                 <h3 class="content-title_header">Заголовок h3</h3>
                 <div class="content-text">
-                  <p>
+                  <p class="content-text_one">
                     Один из самых важных навыков, которые может дать работа с
                     психотерапевтом - умение в разных ситуациях по разному
                     обходиться со своими эмоциями. Снять этот процесс с
@@ -147,30 +130,33 @@
                 <div class="content-sign">Анна Крымская</div>
               </div>
               <div class="content-question">
-                <div class="content-title_header">Что еще можно делать с тревогой?</div>
+                <div class="content-title_header">
+                  Что еще можно делать с тревогой?
+                </div>
                 <div class="content-list">
-                    <div class="content-list_first">
-                      <img src="svg/dott.svg" alt="dott" id="dott" />
-                      <a class="content-list_text" href=""
-                        >Управлять ей через что-то внешнее: включать музыку,
-                        которая создает другое настроение, сесть за работу с
-                        цифрами, которая быстренько активизирует другие участки
-                        мозга, читать блоги, которые вас успокаивают и
-                        отвлекают.</a>
-                    </div>
-                    <div class="content-list_second">
-                      <img src="svg/dott.svg" alt="dott" id="dott" />
-                      <a class="content-list_text" href=""
-                        >А еще порой можно разрешить себе тревогу заесть чем-то
-                        вкусным. Это, конечно, не самая здоровая стратегия, но в
-                        ряде ситуаций можно считать ее вполне рабочей. Особенно,
-                        когда внутренний ресурс на нуле, а поддерживающее
-                        окружение не в доступе.</a
-                      >
-                    </div>
+                  <div class="content-list_first">
+                    <img src="svg/dott.svg" alt="dott" id="dott" />
+                    <a class="content-list_text" href=""
+                      >Управлять ей через что-то внешнее: включать музыку,
+                      которая создает другое настроение, сесть за работу с
+                      цифрами, которая быстренько активизирует другие участки
+                      мозга, читать блоги, которые вас успокаивают и
+                      отвлекают.</a
+                    >
+                  </div>
+                  <div class="content-list_second">
+                    <img src="svg/dott.svg" alt="dott" id="dott" />
+                    <a class="content-list_text" href=""
+                      >А еще порой можно разрешить себе тревогу заесть чем-то
+                      вкусным. Это, конечно, не самая здоровая стратегия, но в
+                      ряде ситуаций можно считать ее вполне рабочей. Особенно,
+                      когда внутренний ресурс на нуле, а поддерживающее
+                      окружение не в доступе.</a
+                    >
+                  </div>
                 </div>
               </div>
-              </div>
+
               <div class="text-explaning">
                 <div class="text-explaining_fight">
                   <img src="img/fight2.png" alt="fight" class="base-img" />
@@ -193,9 +179,14 @@
                       стремимся сделать психотерапию безопасной, удобной и
                       доступной каждому
                     </p>
-                    <img class="content-text_img" src="img/nothing.png" alt="nothing" id="nothing"/>
+                    <img
+                      class="content-text_img"
+                      src="img/nothing.png"
+                      alt="nothing"
+                      id="nothing"
+                    />
                   </div>
-                  <p>
+                  <p class="content-text_base">
                     Одна из ключевых задач психотерапии как раз и заключается в
                     том, чтобы этот репертуар расширять и обучать человека
                     пользоваться доступными ему реакциями в той
@@ -238,27 +229,30 @@
                   </p>
                 </div>
                 <div class="content-question">
-                  <div class="content-title_header">Что еще можно делать с тревогой?</div>
+                  <div class="content-title_header">
+                    Что еще можно делать с тревогой?
+                  </div>
                   <div class="content-list">
-                      <div class="content-list_first">
-                        <img src="svg/dott.svg" alt="dott" id="dott" />
-                        <a class="content-list_text" href=""
-                          >Управлять ей через что-то внешнее: включать музыку,
-                          которая создает другое настроение, сесть за работу с
-                          цифрами, которая быстренько активизирует другие участки
-                          мозга, читать блоги, которые вас успокаивают и
-                          отвлекают.</a>
-                      </div>
-                      <div class="content-list_second">
-                        <img src="svg/dott.svg" alt="dott" id="dott" />
-                        <a class="content-list_text" href=""
-                          >А еще порой можно разрешить себе тревогу заесть чем-то
-                          вкусным. Это, конечно, не самая здоровая стратегия, но в
-                          ряде ситуаций можно считать ее вполне рабочей. Особенно,
-                          когда внутренний ресурс на нуле, а поддерживающее
-                          окружение не в доступе.</a
-                        >
-                      </div>
+                    <div class="content-list_first">
+                      <img src="svg/dott.svg" alt="dott" id="dott" />
+                      <a class="content-list_text" href=""
+                        >Управлять ей через что-то внешнее: включать музыку,
+                        которая создает другое настроение, сесть за работу с
+                        цифрами, которая быстренько активизирует другие участки
+                        мозга, читать блоги, которые вас успокаивают и
+                        отвлекают.</a
+                      >
+                    </div>
+                    <div class="content-list_second">
+                      <img src="svg/dott.svg" alt="dott" id="dott" />
+                      <a class="content-list_text" href=""
+                        >А еще порой можно разрешить себе тревогу заесть чем-то
+                        вкусным. Это, конечно, не самая здоровая стратегия, но в
+                        ряде ситуаций можно считать ее вполне рабочей. Особенно,
+                        когда внутренний ресурс на нуле, а поддерживающее
+                        окружение не в доступе.</a
+                      >
+                    </div>
                   </div>
                 </div>
                 <div class="img-text">
@@ -312,7 +306,7 @@
                       ваша устойчивость к стрессу, депрессии, неопределенности,
                       да и к жизни в целом.
                     </p>
-                  </div>    
+                  </div>
                 </div>
                 <img src="svg/GroupLight.svg" alt="Light" class="Light" />
                 <div class="content-text">
@@ -344,12 +338,16 @@
                   <p>Чувства и эмоции · Самооценка и самопринятие · Тревога</p>
                 </div>
               </div>
-              <img src="img/line.png" alt="Line" class="Line" />
+              <img src="img/line.png" alt="Line" class="Line" id="line" />
               <div class="big-question">
-                <div><p class="big-question_title">Откликается проблема?</p></div>
-                <div><p class="big-question_help">
-                  Поможем подобрать специалиста по работе с подобным запросом
-                </p></div>
+                <div>
+                  <p class="big-question_title">Откликается проблема?</p>
+                </div>
+                <div>
+                  <p class="big-question_help">
+                    Поможем подобрать специалиста по работе с подобным запросом
+                  </p>
+                </div>
                 <div id="btn-menu">
                   <button class="btn">Подобрать психолога</button>
                 </div>
@@ -366,25 +364,31 @@
             Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick,
             через который удобно выбрать дату, время встречи и оплатить её
           </p>
-          <button class="aside-btn"id="group-btn">Подробнее</button>
+          <button class="aside-btn" id="group-btn">Подробнее</button>
         </div>
         <div class="aside-liliya">
           <img src="img/foto.png" alt="foto" class="aside-foto" />
           <div class="aside-liliya_pic">
             <div class="aside-corresp">
-            <img src="svg/pensil.svg" alt="pensil" class="aside-pensil" />
-            <p class="aside-corresp-text">Переписка</p>
-            </div>   
+              <img src="svg/pensil.svg" alt="pensil" class="aside-pensil" />
+              <p class="aside-corresp-text">Переписка</p>
+            </div>
             <div class="aside-video">
-            <img src="svg/video.svg" alt="video" class="just-video" />
-            <p class="aside-corresp-text">Видео</p>
-          </div>
+              <img src="svg/video.svg" alt="video" class="just-video" />
+              <p class="aside-corresp-text">Видео</p>
+            </div>
           </div>
           <div class="aside-liliya-info">
             <p class="aside-liliya-info_name">Лилия</p>
             <p class="aside-liliya-info-prof">Психолог</p>
-            <p class="aside-liliya-info_skills">Опыт 6 лет<img src="svg/Ellipse.svg" alt="ellipse" class="ellipse">43 года</p>
-            <img src="svg/line2.svg" alt="line2" class="line-two">
+            <p class="aside-liliya-info_skills">
+              Опыт 6 лет<img
+                src="svg/Ellipse.svg"
+                alt="ellipse"
+                class="ellipse"
+              />43 года
+            </p>
+            <img src="svg/line2.svg" alt="line2" class="line-two" />
             <div class="Liliyas-work">
               <p class="aside-liliya-info_title">С чем работает психолог</p>
               <ul class="aside-liliya-info_list">
@@ -425,10 +429,10 @@
             <p class="aside-store-number">18 500 ₽</p>
             <button class="store-btn">Купить</button>
           </div>
-       </div>
+        </div>
       </aside>
-      <div class="couple"><img src="img/couple.png" alt="couple"/></div>
-      <div class="puddle-two" ><img src="svg/puddle2.svg" alt="puddle2"/></div>
+      <div class="couple"><img src="img/couple.png" alt="couple" /></div>
+      <div class="puddle-two"><img src="svg/puddle2.svg" alt="puddle2" /></div>
     </main>
     <footer class="container-footer">
       <div class="row-footer">
